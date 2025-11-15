@@ -14,15 +14,15 @@
         <h1>Loja Liviero</h1>
         <nav>
             <a href="#">Início</a>
-            <a href="#">Produtos</a>
+            <a href="{{ route('produtos.index') }}">Produtos</a>
             <a href="#">Sobre</a>
             <a href="#">Contato</a>
         </nav>
     </header>
 
     <section class="banner">
-        <h2>Promoção de Verão</h2>
-        <p>Descontos de até 40% em calçados selecionados!</p>
+        <h2></h2>
+        <p></p>
     </section>
 
     <main class="container">
