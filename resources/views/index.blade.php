@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Liviero</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 
 </head>
@@ -16,14 +16,14 @@
             <a href="#">Início</a>
             <a href="{{ route('produtos.index') }}">Produtos</a>
             <a href="#">Sobre</a>
-            <a href="#">Contato</a>
+            <a href="#">login</a>
         </nav>
     </header>
 
-    <section class="banner">
-        <h2></h2>
-        <p></p>
-    </section>
+   <section class="banner">
+    <h2>Confira nossos produtos</h2>
+    <p>Qualidade e preço justo para você!</p>
+</section>
 
     <main class="container">
         <h2 class="titulo-secao">Produtos em Destaque</h2>
