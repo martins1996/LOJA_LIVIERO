@@ -31,7 +31,7 @@
                 <!-- Se houver imagem, exibe; senão, placeholder -->
                 <img src="{{ $produto->imagem ? asset('storage/' . $produto->imagem) : 'https://via.placeholder.com/250x180' }}" 
                      alt="{{ $produto->nome }}">
-
+               
                 <h3>{{ $produto->nome }}</h3>
                 <p>{{ $produto->descricao }}</p>
                 <p class="preco">R$ {{ number_format($produto->preco, 2, ',', '.') }}</p>

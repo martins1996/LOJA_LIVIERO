@@ -3,16 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-*/
-
 // Rota da página inicial
+use App\Models\Produto;
+
 Route::get('/', function () {
-    return view('index');
-})->name('home'); // Nome da rota para links no Blade
+    $produtos = Produto::all(); // 🔥 Agora a variável existe!
+    return view('index', compact('produtos'));
+})->name('home');
+// Nome da rota para links no Blade
 
 // Rotas de produtos
 Route::get('/produtos', [ProdutoController::class, 'index'])->name('produtos.index');
